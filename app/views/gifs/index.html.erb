@@ -1,0 +1,22 @@
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1 class="text-center"> All gifs </h1>
+      <% @gifs.each do |gif| %>
+      <div class="product">
+
+ <%= link_to gif_path(gif) do %>
+
+         <div class='product-body'>
+            <h3 class="ttext"><%= gif.url %></h3>
+            <p class="ttext"><%= gif.tag %></p>
+           <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

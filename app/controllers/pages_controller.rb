@@ -1,13 +1,9 @@
 class PagesController < ApplicationController
   def home
+     @gif = Gif.all
   end
-   def home
-    # ...
+ def category
   end
-  def team
-    # ...
-  end
-  def contact
-    # ...
-  end
+
+
 end
