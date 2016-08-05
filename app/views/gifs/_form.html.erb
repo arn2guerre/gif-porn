@@ -1,5 +1,5 @@
  <%= simple_form_for @gif do |f| %>
-      <%= f.input :url, as: :url, label: "which url?", input_html: { value: "http://" } %>
+      <%= f.input :url, as: :url, label: "which url?", input_html: { value: "" } %>
       <%= f.input :tag, as: :text, label: "which tag?", input_html: { value: "bukkake" } %> 
       <%= f.button :submit, "Add", class: "btn btn-primary" %>
   <% end %>

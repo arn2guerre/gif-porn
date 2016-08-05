@@ -2,6 +2,7 @@ class GifsController < ApplicationController
  def index
       if params[:tag]
       @gifs = Gif.where(tag: params[:tag])
+     
       else
       @gifs = Gif.all
       end

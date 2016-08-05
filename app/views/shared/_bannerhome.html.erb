@@ -1,20 +1,26 @@
-<div class="jumbotron container">
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Documents</h1><br>
     <p class="lead">
+      <div class="card-columns">
+  <div class="card-decky">
       <% @gif.each do |gif| %>
-      <tr>
-         <%=image_tag("icondoc.png")%>
-         <%= link_to gif.url, gif_path(gif), class: "card-product " %><br>
 
 
-      </tr>
+            <div class="card">
+              <%= image_tag gif.url, class:"card-img-top ", alt:"Card image cap" %>
+
+            </div>
+
     <% end %>
       <br><br>
-<%= link_to "All gifs", gifs_path, class:"text-right pull-xs-right" %>
+<%= link_to "category", gifs_path, class:"text-right pull-xs-right" %>
 
     </p>
+     </div>
   </div>
 </div>
+</div>
+</div>
+
 
 

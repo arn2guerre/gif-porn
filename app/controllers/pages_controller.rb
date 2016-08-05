@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-     @gif = Gif.all
+     @gif = Gif.all.reverse
   end
  def category
   end
