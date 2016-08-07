@@ -18,9 +18,9 @@ class GifsController < ApplicationController
     @gif = Gif.new
   end
   def create
-@gif = Gif.new(gif_params)
+    @gif = Gif.new(gif_params)
    if @gif.save
-    redirect_to gifs_path
+    redirect_to root_path
    else
      render :new
    end
